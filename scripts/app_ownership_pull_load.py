@@ -40,6 +40,12 @@ for i in range(0, len(td_elements), 2):
     # Update the dictionary
     holders_dict[label] = value
 
+## Stock Price
+price_element = soup.find('fin-streamer', {'data-field': 'regularMarketPrice'})
+
+# Extract the value from the 'data-value' attribute
+stock_price = price_element['data-value']
+
 
 ### Send to GSheet
 ## Config details
@@ -53,8 +59,9 @@ worksheet = sh.worksheet("Data")  # Access the "Data" sheet
 
 
 ## Insert data
-# Extract the values in the correct order (A, B, C, D, E)
+# Extract the values in the correct order (A, B, C, D, E, F)
 values = [
+    stock_price,
     holders_dict["% of Shares Held by All Insider"],
     holders_dict["% of Shares Held by Institutions"],
     holders_dict["% of Float Held by Institutions"],
@@ -65,11 +72,12 @@ values = [
 # Insert a new row at position 2 (shifts existing row 2 and below down)
 worksheet.insert_row([], 2)
 
-# Update row 2 with the new data in columns A to E
-worksheet.update('A2:E2', [values])
+# Update row 2 with the new data in columns A to F
+worksheet.update('A2:F2', [values])
 
 # Add formulas individually to columns F:I for the new row using update_acell (all together came through as a string in the gsheet)
-worksheet.update_acell('F2', '=IFERROR(((A2-A3)/A3),"")')
-worksheet.update_acell('G2', '=IFERROR(((B2-B3)/B3),"")')
-worksheet.update_acell('H2', '=IFERROR(((C2-C3)/C3),"")')
-worksheet.update_acell('I2', '=IFERROR(((D2-D3)/D3),"")')
+worksheet.update_acell('G2', '=IFERROR(((A2-A3)/A3),"")')
+worksheet.update_acell('H2', '=IFERROR(((B2-B3)/B3),"")')
+worksheet.update_acell('I2', '=IFERROR(((C2-C3)/C3),"")')
+worksheet.update_acell('J2', '=IFERROR(((D2-D3)/D3),"")')
+worksheet.update_acell('K2', '=IFERROR(((E2-E3)/E3),"")')
