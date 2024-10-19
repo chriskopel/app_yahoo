@@ -53,9 +53,6 @@ worksheet = sh.worksheet("Data")  # Access the "Data" sheet
 
 
 ## Insert data
-# Insert a new row at position 2 (shifts existing row 2 and below down)
-worksheet.insert_row([], 2)
-
 # Extract the values in the correct order (A, B, C, D, E)
 values = [
     holders_dict["% of Shares Held by All Insider"],
@@ -65,5 +62,14 @@ values = [
     datetime.now().strftime("%Y/%m/%d %H:%M:%S") + " MT"
 ]
 
+# Insert a new row at position 2 (shifts existing row 2 and below down)
+worksheet.insert_row([], 2)
+
 # Update row 2 with the new data in columns A to E
 worksheet.update('A2:E2', [values])
+
+# Add formulas individually to columns F:I for the new row using update_acell (all together came through as a string in the gsheet)
+worksheet.update_acell('F2', '=IFERROR(((A2-A3)/A3),"")')
+worksheet.update_acell('G2', '=IFERROR(((B2-B3)/B3),"")')
+worksheet.update_acell('H2', '=IFERROR(((C2-C3)/C3),"")')
+worksheet.update_acell('I2', '=IFERROR(((D2-D3)/D3),"")')
