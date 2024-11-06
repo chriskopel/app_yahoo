@@ -84,7 +84,10 @@ values = [
 
 ### Send to GSheet
 ## Config details
-sa_path = r"C:\Users\Owner\AppData\Local\Programs\Python\Python310\Lib\site-packages\gspread\service_account.json"
+sa_path_windows = r"C:\Users\Owner\AppData\Local\Programs\Python\Python310\Lib\site-packages\gspread\service_account.json"
+sa_path_mac = "/Users/ckopel/Documents/keys/service_account.json"
+sa_path = sa_path_windows if os.name == "nt" else sa_path_mac if os.name == "posix" else None
+
 gc = gspread.service_account(filename=sa_path)
 
 

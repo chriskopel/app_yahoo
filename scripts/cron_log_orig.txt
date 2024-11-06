@@ -1,0 +1,12 @@
+/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 91, in <module>
+    gc = gspread.service_account(filename=sa_path)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/auth.py", line 328, in service_account
+    creds = SACredentials.from_service_account_file(filename, scopes=scopes)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/service_account.py", line 260, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+PermissionError: [Errno 1] Operation not permitted: '/Users/ckopel/Documents/keys/service_account.json'
