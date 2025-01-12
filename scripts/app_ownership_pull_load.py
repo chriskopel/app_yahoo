@@ -51,7 +51,7 @@ holders_dict = {}
 # Iterate through the list in pairs (numeric value and its corresponding label)
 for i in range(0, len(td_elements), 2):
     # Strip any extra characters and clean up the value
-    value = td_elements[i].text.strip().replace('%', '')
+    value = td_elements[i].text.strip().replace('%', '').replace(',','')
     
     # Convert the value to float or integer as appropriate
     if '.' in value:
@@ -67,10 +67,11 @@ for i in range(0, len(td_elements), 2):
 
 ## Stock Price
 # Look for the `fin-streamer` tag with both `data-field="regularMarketPrice"` and `data-symbol="APP"`
-price_element = soup.find('fin-streamer', {'data-field': 'regularMarketPrice', 'data-symbol': 'APP'})
+# price_element = soup.find('fin-streamer', {'data-field': 'regularMarketPrice', 'data-symbol': 'APP'}) # changed 2025-01-12
+# # Extract the value from the 'data-value' attribute
+# stock_price = price_element['data-value']# changed 2025-01-12
 
-# Extract the value from the 'data-value' attribute
-stock_price = price_element['data-value']
+stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
 
 # Extract the values in the correct order (A, B, C, D, E, F)
 values = [
