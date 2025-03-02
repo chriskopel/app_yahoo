@@ -67,11 +67,11 @@ for i in range(0, len(td_elements), 2):
 
 ## Stock Price
 # Look for the `fin-streamer` tag with both `data-field="regularMarketPrice"` and `data-symbol="APP"`
-# price_element = soup.find('fin-streamer', {'data-field': 'regularMarketPrice', 'data-symbol': 'APP'}) # changed 2025-01-12
+price_element = soup.find('fin-streamer', {'data-field': 'regularMarketPrice', 'data-symbol': 'APP'}) # changed 2025-01-12 # changed 2025-01-12 # changed back on 2025-03-02 (below stopped working but this worked again)
 # # Extract the value from the 'data-value' attribute
-# stock_price = price_element['data-value']# changed 2025-01-12
+stock_price = float(price_element['data-value']) # changed 2025-01-12 # changed back on 2025-03-02 (below stopped working but this worked again)
 
-stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
+# stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip()) # reverted to the above on 2025-03-02 (this stopped working but the above worked again)
 
 # Extract the values in the correct order (A, B, C, D, E, F)
 values = [
