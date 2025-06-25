@@ -1,0 +1,251 @@
+Job started at: Thu Feb 27 17:51:25 MST 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
+    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
+AttributeError: 'NoneType' object has no attribute 'text'
+Job started at: Thu Feb 27 18:09:13 MST 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
+    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
+AttributeError: 'NoneType' object has no attribute 'text'
+No network connection at: Fri Feb 28 14:25:39 MST 2025. Job skipped.
+Job started at: Fri Feb 28 17:45:14 MST 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
+    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
+AttributeError: 'NoneType' object has no attribute 'text'
+Job started at: Sat Mar  1 16:15:40 MST 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
+    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
+AttributeError: 'NoneType' object has no attribute 'text'
+Job started at: Sun Mar  2 14:20:03 MST 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
+    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
+AttributeError: 'NoneType' object has no attribute 'text'
+Job started at: Sun Mar  2 14:59:20 MST 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
+    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
+AttributeError: 'NoneType' object has no attribute 'text'
+Job started at: Sun Mar  2 15:23:34 MST 2025
+Job completed at: Sun Mar  2 15:25:04 MST 2025
+Job started at: Sun Mar  2 19:50:05 MST 2025
+Job completed at: Sun Mar  2 19:50:22 MST 2025
+There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+0   chromedriver                        0x000000010d7d0d98 chromedriver + 5954968
+1   chromedriver                        0x000000010d7c89ca chromedriver + 5921226
+2   chromedriver                        0x000000010d2885e0 chromedriver + 415200
+3   chromedriver                        0x000000010d27f580 chromedriver + 378240
+4   chromedriver                        0x000000010d26f748 chromedriver + 313160
+5   chromedriver                        0x000000010d27142d chromedriver + 320557
+6   chromedriver                        0x000000010d26facb chromedriver + 314059
+7   chromedriver                        0x000000010d26f4f8 chromedriver + 312568
+8   chromedriver                        0x000000010d26f214 chromedriver + 311828
+9   chromedriver                        0x000000010d26cf80 chromedriver + 302976
+10  chromedriver                        0x000000010d26d83a chromedriver + 305210
+11  chromedriver                        0x000000010d28bab9 chromedriver + 428729
+12  chromedriver                        0x000000010d328075 chromedriver + 1069173
+13  chromedriver                        0x000000010d300012 chromedriver + 905234
+14  chromedriver                        0x000000010d32739e chromedriver + 1065886
+15  chromedriver                        0x000000010d2ffde3 chromedriver + 904675
+16  chromedriver                        0x000000010d2cbc6a chromedriver + 691306
+17  chromedriver                        0x000000010d2ccdc1 chromedriver + 695745
+18  chromedriver                        0x000000010d793e50 chromedriver + 5705296
+19  chromedriver                        0x000000010d797da0 chromedriver + 5721504
+20  chromedriver                        0x000000010d775797 chromedriver + 5580695
+21  chromedriver                        0x000000010d79882b chromedriver + 5724203
+22  chromedriver                        0x000000010d763fc4 chromedriver + 5509060
+23  chromedriver                        0x000000010d7b7088 chromedriver + 5849224
+24  chromedriver                        0x000000010d7b724f chromedriver + 5849679
+25  chromedriver                        0x000000010d7c85a8 chromedriver + 5920168
+26  libsystem_pthread.dylib             0x00007ff8191c0253 _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff8191bbbef thread_start + 15
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x105a0e130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105a0e130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105a0e130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 96, in <module>
+    sh = gc.open("APP Ownership")
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 132, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 105, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 534, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 298, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 258, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 191, in _token_endpoint_request_no_throw
+    response = request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 193, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105a0e130>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 96, in <module>
+    sh = gc.open("APP Ownership")
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 132, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 105, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 574, in request
+    self.credentials.refresh(auth_request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 298, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 258, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 191, in _token_endpoint_request_no_throw
+    response = request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 193, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))

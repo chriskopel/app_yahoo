@@ -1,0 +1,406 @@
+There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache
+Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+0   chromedriver                        0x00000001079428a8 chromedriver + 5986472
+1   chromedriver                        0x00000001079399da chromedriver + 5949914
+2   chromedriver                        0x00000001073f2600 chromedriver + 415232
+3   chromedriver                        0x00000001073e9473 chromedriver + 377971
+4   chromedriver                        0x00000001073da378 chromedriver + 316280
+5   chromedriver                        0x00000001073dc05d chromedriver + 323677
+6   chromedriver                        0x00000001073da6fb chromedriver + 317179
+7   chromedriver                        0x00000001073da123 chromedriver + 315683
+8   chromedriver                        0x00000001073d9e24 chromedriver + 314916
+9   chromedriver                        0x00000001073d7ccd chromedriver + 306381
+10  chromedriver                        0x00000001073d848a chromedriver + 308362
+11  chromedriver                        0x00000001073f5b79 chromedriver + 428921
+12  chromedriver                        0x0000000107492185 chromedriver + 1069445
+13  chromedriver                        0x000000010746a312 chromedriver + 906002
+14  chromedriver                        0x0000000107491566 chromedriver + 1066342
+15  chromedriver                        0x000000010746a0e3 chromedriver + 905443
+16  chromedriver                        0x000000010743661d chromedriver + 693789
+17  chromedriver                        0x0000000107437281 chromedriver + 696961
+18  chromedriver                        0x0000000107900570 chromedriver + 5715312
+19  chromedriver                        0x0000000107904435 chromedriver + 5731381
+20  chromedriver                        0x00000001078daec0 chromedriver + 5562048
+21  chromedriver                        0x0000000107904e6b chromedriver + 5733995
+22  chromedriver                        0x00000001078c9dd4 chromedriver + 5492180
+23  chromedriver                        0x0000000107927a88 chromedriver + 5876360
+24  chromedriver                        0x0000000107927c50 chromedriver + 5876816
+25  chromedriver                        0x00000001079395a1 chromedriver + 5948833
+26  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+27  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Wed May 21 23:01:12 MDT 2025
+Job completed at: Wed May 21 23:01:24 MDT 2025
+No network connection at: Thu May 22 15:09:16 MDT 2025. Job skipped.
+Job started at: Thu May 22 21:55:29 EDT 2025
+Job completed at: Thu May 22 21:55:50 EDT 2025
+Job started at: Fri May 23 16:45:49 EDT 2025
+Job completed at: Fri May 23 16:46:03 EDT 2025
+Job started at: Sat May 24 18:15:43 EDT 2025
+Job started at: Sat May 24 22:25:24 EDT 2025
+Job completed at: Sat May 24 22:25:44 EDT 2025
+Job started at: Sun May 25 16:20:37 EDT 2025
+Job completed at: Sun May 25 16:20:48 EDT 2025
+Job started at: Mon May 26 16:15:40 MDT 2025
+Job completed at: Mon May 26 16:15:49 MDT 2025
+No network connection at: Tue May 27 16:15:44 MDT 2025. Job skipped.
+Job started at: Tue May 27 22:56:33 MDT 2025
+Job completed at: Tue May 27 22:58:07 MDT 2025
+Job started at: Wed May 28 14:20:39 MDT 2025
+Job completed at: Wed May 28 14:21:03 MDT 2025
+Job started at: Thu May 29 15:20:30 MDT 2025
+Job completed at: Thu May 29 17:39:03 MDT 2025
+No network connection at: Fri May 30 14:58:06 MDT 2025. Job skipped.
+Job started at: Fri May 30 21:52:30 MDT 2025
+Job completed at: Fri May 30 21:54:06 MDT 2025
+Job started at: Sat May 31 14:24:04 MDT 2025
+Job completed at: Sat May 31 16:50:36 MDT 2025
+Job started at: Sun Jun  1 16:15:44 MDT 2025
+Job completed at: Sun Jun  1 16:15:55 MDT 2025
+Job started at: Mon Jun  2 14:54:53 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=56087): Read timed out. (read timeout=120)
+Job started at: Mon Jun  2 22:35:08 MDT 2025
+Job completed at: Mon Jun  2 22:36:45 MDT 2025
+Job started at: Tue Jun  3 15:33:59 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=57462): Read timed out. (read timeout=120)
+Job started at: Tue Jun  3 22:59:17 MDT 2025
+Job completed at: Tue Jun  3 22:59:29 MDT 2025
+Job started at: Wed Jun  4 14:29:32 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=58549): Read timed out. (read timeout=120)
+Job started at: Wed Jun  4 22:37:54 MDT 2025
+Job completed at: Wed Jun  4 22:39:34 MDT 2025
+Job started at: Thu Jun  5 14:44:37 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.57)
+Stacktrace:
+0   chromedriver                        0x0000000107803728 chromedriver + 5891880
+1   chromedriver                        0x00000001077fae7a chromedriver + 5856890
+2   chromedriver                        0x00000001072cb400 chromedriver + 418816
+3   chromedriver                        0x000000010729fad0 chromedriver + 240336
+4   chromedriver                        0x000000010734bba8 chromedriver + 945064
+5   chromedriver                        0x000000010736aa1c chromedriver + 1071644
+6   chromedriver                        0x00000001073432b3 chromedriver + 910003
+7   chromedriver                        0x000000010730f507 chromedriver + 697607
+8   chromedriver                        0x0000000107310171 chromedriver + 700785
+9   chromedriver                        0x00000001077c14d0 chromedriver + 5620944
+10  chromedriver                        0x00000001077c545f chromedriver + 5637215
+11  chromedriver                        0x000000010779c8e2 chromedriver + 5470434
+12  chromedriver                        0x00000001077c5dcf chromedriver + 5639631
+13  chromedriver                        0x000000010778b0a4 chromedriver + 5398692
+14  chromedriver                        0x00000001077e8688 chromedriver + 5781128
+15  chromedriver                        0x00000001077e8850 chromedriver + 5781584
+16  chromedriver                        0x00000001077faa41 chromedriver + 5855809
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Thu Jun  5 22:55:01 MDT 2025
+Job completed at: Thu Jun  5 22:57:06 MDT 2025
+Job started at: Fri Jun  6 15:35:47 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.69)
+Stacktrace:
+0   chromedriver                        0x0000000106674728 chromedriver + 5891880
+1   chromedriver                        0x000000010666be7a chromedriver + 5856890
+2   chromedriver                        0x000000010613c400 chromedriver + 418816
+3   chromedriver                        0x0000000106110ad0 chromedriver + 240336
+4   chromedriver                        0x00000001061bcba8 chromedriver + 945064
+5   chromedriver                        0x00000001061dba1c chromedriver + 1071644
+6   chromedriver                        0x00000001061b42b3 chromedriver + 910003
+7   chromedriver                        0x0000000106180507 chromedriver + 697607
+8   chromedriver                        0x0000000106181171 chromedriver + 700785
+9   chromedriver                        0x00000001066324d0 chromedriver + 5620944
+10  chromedriver                        0x000000010663645f chromedriver + 5637215
+11  chromedriver                        0x000000010660d8e2 chromedriver + 5470434
+12  chromedriver                        0x0000000106636dcf chromedriver + 5639631
+13  chromedriver                        0x00000001065fc0a4 chromedriver + 5398692
+14  chromedriver                        0x0000000106659688 chromedriver + 5781128
+15  chromedriver                        0x0000000106659850 chromedriver + 5781584
+16  chromedriver                        0x000000010666ba41 chromedriver + 5855809
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Fri Jun  6 23:26:20 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 72, in <module>
+    stock_price = float(price_element['data-value']) # changed 2025-01-12 # changed back on 2025-03-02 (below stopped working but this worked again)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/bs4/element.py", line 1573, in __getitem__
+    return self.attrs[key]
+KeyError: 'data-value'
+Job started at: Fri Jun  6 23:32:48 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=65093): Read timed out. (read timeout=120)
+Job started at: Fri Jun  6 23:35:35 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 72, in <module>
+    stock_price = float(price_element['data-value']) # changed 2025-01-12 # changed back on 2025-03-02 (below stopped working but this worked again)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/bs4/element.py", line 1573, in __getitem__
+    return self.attrs[key]
+KeyError: 'data-value'
+Job started at: Sat Jun  7 16:15:39 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=49557): Read timed out. (read timeout=120)

@@ -1,33 +1,464 @@
-Job started at: Thu Feb 27 17:51:25 MST 2025
+Job started at: Sat Jun  7 23:32:48 MDT 2025
 Traceback (most recent call last):
-  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
-    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
-AttributeError: 'NoneType' object has no attribute 'text'
-Job started at: Thu Feb 27 18:09:13 MST 2025
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
-  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
-    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
-AttributeError: 'NoneType' object has no attribute 'text'
-No network connection at: Fri Feb 28 14:25:39 MST 2025. Job skipped.
-Job started at: Fri Feb 28 17:45:14 MST 2025
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=50666): Read timed out. (read timeout=120)
+Job started at: Sun Jun  8 16:15:44 MDT 2025
 Traceback (most recent call last):
-  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
-    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
-AttributeError: 'NoneType' object has no attribute 'text'
-Job started at: Sat Mar  1 16:15:40 MST 2025
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
-  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
-    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
-AttributeError: 'NoneType' object has no attribute 'text'
-Job started at: Sun Mar  2 14:20:03 MST 2025
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=51384): Read timed out. (read timeout=120)
+Job started at: Mon Jun  9 14:17:00 MDT 2025
 Traceback (most recent call last):
-  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
-    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
-AttributeError: 'NoneType' object has no attribute 'text'
-Job started at: Sun Mar  2 14:59:20 MST 2025
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.69)
+Stacktrace:
+0   chromedriver                        0x00000001039c5728 chromedriver + 5891880
+1   chromedriver                        0x00000001039bce7a chromedriver + 5856890
+2   chromedriver                        0x000000010348d400 chromedriver + 418816
+3   chromedriver                        0x0000000103461ad0 chromedriver + 240336
+4   chromedriver                        0x000000010350dba8 chromedriver + 945064
+5   chromedriver                        0x000000010352ca1c chromedriver + 1071644
+6   chromedriver                        0x00000001035052b3 chromedriver + 910003
+7   chromedriver                        0x00000001034d1507 chromedriver + 697607
+8   chromedriver                        0x00000001034d2171 chromedriver + 700785
+9   chromedriver                        0x00000001039834d0 chromedriver + 5620944
+10  chromedriver                        0x000000010398745f chromedriver + 5637215
+11  chromedriver                        0x000000010395e8e2 chromedriver + 5470434
+12  chromedriver                        0x0000000103987dcf chromedriver + 5639631
+13  chromedriver                        0x000000010394d0a4 chromedriver + 5398692
+14  chromedriver                        0x00000001039aa688 chromedriver + 5781128
+15  chromedriver                        0x00000001039aa850 chromedriver + 5781584
+16  chromedriver                        0x00000001039bca41 chromedriver + 5855809
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Mon Jun  9 22:43:23 MDT 2025
+Job completed at: Mon Jun  9 22:43:32 MDT 2025
+Job started at: Tue Jun 10 14:17:01 MDT 2025
+Job completed at: Tue Jun 10 14:18:53 MDT 2025
+Job started at: Wed Jun 11 16:15:43 MDT 2025
 Traceback (most recent call last):
-  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 74, in <module>
-    stock_price = float(soup.find('span', {'data-testid': 'qsp-price'}).text.strip())
-AttributeError: 'NoneType' object has no attribute 'text'
-Job started at: Sun Mar  2 15:23:34 MST 2025
-Job completed at: Sun Mar  2 15:25:04 MST 2025
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.70)
+Stacktrace:
+0   chromedriver                        0x000000010ecea7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010ece1efa chromedriver + 5857018
+2   chromedriver                        0x000000010e7b2400 chromedriver + 418816
+3   chromedriver                        0x000000010e786ad0 chromedriver + 240336
+4   chromedriver                        0x000000010e832ba8 chromedriver + 945064
+5   chromedriver                        0x000000010e851a1c chromedriver + 1071644
+6   chromedriver                        0x000000010e82a2b3 chromedriver + 910003
+7   chromedriver                        0x000000010e7f6507 chromedriver + 697607
+8   chromedriver                        0x000000010e7f7171 chromedriver + 700785
+9   chromedriver                        0x000000010eca8550 chromedriver + 5621072
+10  chromedriver                        0x000000010ecac4df chromedriver + 5637343
+11  chromedriver                        0x000000010ec83962 chromedriver + 5470562
+12  chromedriver                        0x000000010ecace4f chromedriver + 5639759
+13  chromedriver                        0x000000010ec72124 chromedriver + 5398820
+14  chromedriver                        0x000000010eccf708 chromedriver + 5781256
+15  chromedriver                        0x000000010eccf8d0 chromedriver + 5781712
+16  chromedriver                        0x000000010ece1ac1 chromedriver + 5855937
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Wed Jun 11 23:00:54 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=59881): Read timed out. (read timeout=120)
+Job started at: Thu Jun 12 14:31:17 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.70)
+Stacktrace:
+0   chromedriver                        0x000000010fb2e7a8 chromedriver + 5892008
+1   chromedriver                        0x000000010fb25efa chromedriver + 5857018
+2   chromedriver                        0x000000010f5f6400 chromedriver + 418816
+3   chromedriver                        0x000000010f5caad0 chromedriver + 240336
+4   chromedriver                        0x000000010f676ba8 chromedriver + 945064
+5   chromedriver                        0x000000010f695a1c chromedriver + 1071644
+6   chromedriver                        0x000000010f66e2b3 chromedriver + 910003
+7   chromedriver                        0x000000010f63a507 chromedriver + 697607
+8   chromedriver                        0x000000010f63b171 chromedriver + 700785
+9   chromedriver                        0x000000010faec550 chromedriver + 5621072
+10  chromedriver                        0x000000010faf04df chromedriver + 5637343
+11  chromedriver                        0x000000010fac7962 chromedriver + 5470562
+12  chromedriver                        0x000000010faf0e4f chromedriver + 5639759
+13  chromedriver                        0x000000010fab6124 chromedriver + 5398820
+14  chromedriver                        0x000000010fb13708 chromedriver + 5781256
+15  chromedriver                        0x000000010fb138d0 chromedriver + 5781712
+16  chromedriver                        0x000000010fb25ac1 chromedriver + 5855937
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Thu Jun 12 22:54:14 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=61764): Read timed out. (read timeout=120)
+Job started at: Fri Jun 13 15:01:30 MDT 2025
+Job completed at: Fri Jun 13 17:50:21 MDT 2025
+Job started at: Sat Jun 14 14:31:26 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+0   chromedriver                        0x00000001020ed7a8 chromedriver + 5892008
+1   chromedriver                        0x00000001020e4efa chromedriver + 5857018
+2   chromedriver                        0x0000000101bb5400 chromedriver + 418816
+3   chromedriver                        0x0000000101b89ad0 chromedriver + 240336
+4   chromedriver                        0x0000000101c35ba8 chromedriver + 945064
+5   chromedriver                        0x0000000101c54a1c chromedriver + 1071644
+6   chromedriver                        0x0000000101c2d2b3 chromedriver + 910003
+7   chromedriver                        0x0000000101bf9507 chromedriver + 697607
+8   chromedriver                        0x0000000101bfa171 chromedriver + 700785
+9   chromedriver                        0x00000001020ab550 chromedriver + 5621072
+10  chromedriver                        0x00000001020af4df chromedriver + 5637343
+11  chromedriver                        0x0000000102086962 chromedriver + 5470562
+12  chromedriver                        0x00000001020afe4f chromedriver + 5639759
+13  chromedriver                        0x0000000102075124 chromedriver + 5398820
+14  chromedriver                        0x00000001020d2708 chromedriver + 5781256
+15  chromedriver                        0x00000001020d28d0 chromedriver + 5781712
+16  chromedriver                        0x00000001020e4ac1 chromedriver + 5855937
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Sat Jun 14 23:08:27 MDT 2025
+Job completed at: Sat Jun 14 23:08:48 MDT 2025
+Job started at: Sun Jun 15 15:10:33 MDT 2025
+Job completed at: Sun Jun 15 18:18:37 MDT 2025
+No network connection at: Mon Jun 16 15:03:01 MDT 2025. Job skipped.
+Job started at: Mon Jun 16 22:45:16 MDT 2025
+Job completed at: Mon Jun 16 22:45:50 MDT 2025
+Job started at: Tue Jun 17 14:17:00 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: chrome=137.0.7151.119)
+Stacktrace:
+0   chromedriver                        0x0000000109350358 chromedriver + 6136664
+1   chromedriver                        0x0000000109347aba chromedriver + 6101690
+2   chromedriver                        0x0000000108ddc380 chromedriver + 418688
+3   chromedriver                        0x0000000108dc3d92 chromedriver + 318866
+4   chromedriver                        0x0000000108dc3acb chromedriver + 318155
+5   chromedriver                        0x0000000108dc2a50 chromedriver + 313936
+6   chromedriver                        0x0000000108dea2be chromedriver + 475838
+7   chromedriver                        0x0000000108e7c0cc chromedriver + 1073356
+8   chromedriver                        0x0000000108e53fc3 chromedriver + 909251
+9   chromedriver                        0x0000000108e20217 chromedriver + 696855
+10  chromedriver                        0x0000000108e20e81 chromedriver + 700033
+11  chromedriver                        0x000000010930e220 chromedriver + 5866016
+12  chromedriver                        0x000000010931218f chromedriver + 5882255
+13  chromedriver                        0x00000001092e95c2 chromedriver + 5715394
+14  chromedriver                        0x0000000109312aef chromedriver + 5884655
+15  chromedriver                        0x00000001092d7d84 chromedriver + 5643652
+16  chromedriver                        0x00000001093352b8 chromedriver + 6025912
+17  chromedriver                        0x0000000109335480 chromedriver + 6026368
+18  chromedriver                        0x0000000109347681 chromedriver + 6100609
+19  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Tue Jun 17 22:38:13 MDT 2025
+Job completed at: Tue Jun 17 22:39:20 MDT 2025
+Job started at: Wed Jun 18 15:52:44 MDT 2025
+Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.119)
+Stacktrace:
+0   chromedriver                        0x0000000104aad358 chromedriver + 6136664
+1   chromedriver                        0x0000000104aa4aba chromedriver + 6101690
+2   chromedriver                        0x0000000104539380 chromedriver + 418688
+3   chromedriver                        0x000000010450daa0 chromedriver + 240288
+4   chromedriver                        0x00000001045b98a8 chromedriver + 944296
+5   chromedriver                        0x00000001045d872c chromedriver + 1070892
+6   chromedriver                        0x00000001045b0fc3 chromedriver + 909251
+7   chromedriver                        0x000000010457d217 chromedriver + 696855
+8   chromedriver                        0x000000010457de81 chromedriver + 700033
+9   chromedriver                        0x0000000104a6b220 chromedriver + 5866016
+10  chromedriver                        0x0000000104a6f18f chromedriver + 5882255
+11  chromedriver                        0x0000000104a465c2 chromedriver + 5715394
+12  chromedriver                        0x0000000104a6faef chromedriver + 5884655
+13  chromedriver                        0x0000000104a34d84 chromedriver + 5643652
+14  chromedriver                        0x0000000104a922b8 chromedriver + 6025912
+15  chromedriver                        0x0000000104a92480 chromedriver + 6026368
+16  chromedriver                        0x0000000104aa4681 chromedriver + 6100609
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+
+Job started at: Wed Jun 18 22:34:02 MDT 2025
+Job completed at: Wed Jun 18 22:34:41 MDT 2025
+Job started at: Thu Jun 19 14:19:57 MDT 2025
+Job completed at: Thu Jun 19 14:52:07 MDT 2025
+Job started at: Fri Jun 20 14:17:05 MDT 2025
+Job completed at: Fri Jun 20 14:17:13 MDT 2025
+Job started at: Sat Jun 21 15:37:54 MDT 2025
+Job completed at: Sat Jun 21 15:38:06 MDT 2025
+Job started at: Sun Jun 22 14:30:40 MDT 2025
+Job completed at: Sun Jun 22 18:18:36 MDT 2025
+Job started at: Mon Jun 23 15:24:34 MDT 2025
+Job completed at: Mon Jun 23 15:24:44 MDT 2025
+Job started at: Tue Jun 24 14:44:13 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+0   chromedriver                        0x000000010d3ae358 chromedriver + 6136664
+1   chromedriver                        0x000000010d3a5aba chromedriver + 6101690
+2   chromedriver                        0x000000010ce3a380 chromedriver + 418688
+3   chromedriver                        0x000000010ce0eaa0 chromedriver + 240288
+4   chromedriver                        0x000000010ceba8a8 chromedriver + 944296
+5   chromedriver                        0x000000010ced972c chromedriver + 1070892
+6   chromedriver                        0x000000010ceb1fc3 chromedriver + 909251
+7   chromedriver                        0x000000010ce7e217 chromedriver + 696855
+8   chromedriver                        0x000000010ce7ee81 chromedriver + 700033
+9   chromedriver                        0x000000010d36c220 chromedriver + 5866016
+10  chromedriver                        0x000000010d37018f chromedriver + 5882255
+11  chromedriver                        0x000000010d3475c2 chromedriver + 5715394
+12  chromedriver                        0x000000010d370aef chromedriver + 5884655
+13  chromedriver                        0x000000010d335d84 chromedriver + 5643652
+14  chromedriver                        0x000000010d3932b8 chromedriver + 6025912
+15  chromedriver                        0x000000010d393480 chromedriver + 6026368
+16  chromedriver                        0x000000010d3a5681 chromedriver + 6100609
+17  libsystem_pthread.dylib             0x00007ff8132badf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8132b6857 thread_start + 15
+

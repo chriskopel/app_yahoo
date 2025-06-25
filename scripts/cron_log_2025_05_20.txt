@@ -1,0 +1,669 @@
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+OSError: [Errno 65] No route to host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(65, 'No route to host'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(65, 'No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 109, in <module>
+    worksheet.update_acell('I2', '=IFERROR(((C2-C3)/C3),"")')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/worksheet.py", line 737, in update_acell
+    return self.update_cell(*(a1_to_rowcol(label)), value=value)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/worksheet.py", line 754, in update_cell
+    data = self.client.values_update(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/http_client.py", line 173, in values_update
+    r = self.request("put", url, params=params, json=body)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 534, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 298, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 258, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 191, in _token_endpoint_request_no_throw
+    response = request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 193, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: ('Connection aborted.', OSError(65, 'No route to host'))
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x10da8b490>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10da8b490>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10da8b490>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 96, in <module>
+    sh = gc.open("APP Ownership")
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 132, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 105, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 534, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 298, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 258, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 191, in _token_endpoint_request_no_throw
+    response = request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 193, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10da8b490>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Job started at: Tue Mar 18 22:49:10 MDT 2025
+Job completed at: Tue Mar 18 22:49:20 MDT 2025
+Job started at: Wed Mar 19 15:01:19 MDT 2025
+Job completed at: Wed Mar 19 15:41:25 MDT 2025
+Job started at: Thu Mar 20 14:17:07 MDT 2025
+Job completed at: Thu Mar 20 14:18:52 MDT 2025
+No network connection at: Fri Mar 21 14:19:08 MDT 2025. Job skipped.
+Job started at: Fri Mar 21 23:13:27 MDT 2025
+Job completed at: Fri Mar 21 23:13:57 MDT 2025
+Job started at: Sat Mar 22 15:10:42 MDT 2025
+Job completed at: Sat Mar 22 16:30:01 MDT 2025
+Job started at: Sun Mar 23 14:31:35 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.166)
+Stacktrace:
+0   chromedriver                        0x0000000102a15568 chromedriver + 6088040
+1   chromedriver                        0x0000000102a0d17a chromedriver + 6054266
+2   chromedriver                        0x00000001024ac540 chromedriver + 415040
+3   chromedriver                        0x0000000102480605 chromedriver + 235013
+4   chromedriver                        0x000000010252c9ae chromedriver + 940462
+5   chromedriver                        0x000000010254b3ac chromedriver + 1065900
+6   chromedriver                        0x00000001025241c3 chromedriver + 905667
+7   chromedriver                        0x00000001024f005a chromedriver + 692314
+8   chromedriver                        0x00000001024f11b1 chromedriver + 696753
+9   chromedriver                        0x00000001029d4c90 chromedriver + 5823632
+10  chromedriver                        0x00000001029d8b44 chromedriver + 5839684
+11  chromedriver                        0x00000001029afe86 chromedriver + 5672582
+12  chromedriver                        0x00000001029d953b chromedriver + 5842235
+13  chromedriver                        0x000000010299e824 chromedriver + 5601316
+14  chromedriver                        0x00000001029fb618 chromedriver + 5981720
+15  chromedriver                        0x00000001029fb7df chromedriver + 5982175
+16  chromedriver                        0x0000000102a0cd58 chromedriver + 6053208
+17  libsystem_pthread.dylib             0x00007ff806bcc253 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff806bc7bef thread_start + 15
+
+Job started at: Sun Mar 23 23:03:03 MDT 2025
+Job completed at: Sun Mar 23 23:03:13 MDT 2025
+Job started at: Mon Mar 24 14:55:28 MDT 2025
+Job completed at: Mon Mar 24 14:55:39 MDT 2025
+Job started at: Tue Mar 25 14:26:23 MDT 2025
+Job completed at: Tue Mar 25 14:51:27 MDT 2025
+Job started at: Wed Mar 26 15:34:14 MDT 2025
+Job completed at: Wed Mar 26 15:39:43 MDT 2025
+Job started at: Thu Mar 27 16:15:37 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 72, in <module>
+    stock_price = float(price_element['data-value']) # changed 2025-01-12 # changed back on 2025-03-02 (below stopped working but this worked again)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/bs4/element.py", line 1573, in __getitem__
+    return self.attrs[key]
+KeyError: 'data-value'
+Job started at: Thu Mar 27 23:20:59 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 72, in <module>
+    stock_price = float(price_element['data-value']) # changed 2025-01-12 # changed back on 2025-03-02 (below stopped working but this worked again)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/bs4/element.py", line 1573, in __getitem__
+    return self.attrs[key]
+KeyError: 'data-value'
+Job started at: Fri Mar 28 15:55:58 MDT 2025
+Job completed at: Fri Mar 28 17:50:25 MDT 2025
+No network connection at: Sat Mar 29 16:15:42 MDT 2025. Job skipped.
+Job started at: Sat Mar 29 23:24:49 MDT 2025
+Job completed at: Sat Mar 29 23:24:59 MDT 2025
+Job started at: Sun Mar 30 14:20:06 MDT 2025
+Job completed at: Sun Mar 30 14:38:53 MDT 2025
+Job started at: Mon Mar 31 14:23:57 MDT 2025
+Job completed at: Mon Mar 31 14:24:18 MDT 2025
+Job started at: Tue Apr  1 15:56:55 MDT 2025
+Job completed at: Tue Apr  1 15:57:04 MDT 2025
+No network connection at: Wed Apr  2 15:23:26 MDT 2025. Job skipped.
+Job started at: Wed Apr  2 23:10:27 MDT 2025
+Job completed at: Wed Apr  2 23:10:46 MDT 2025
+Job started at: Thu Apr  3 14:18:33 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.41)
+Stacktrace:
+0   chromedriver                        0x000000010e647168 chromedriver + 6177128
+1   chromedriver                        0x000000010e63e82a chromedriver + 6141994
+2   chromedriver                        0x000000010e0c8e00 chromedriver + 417280
+3   chromedriver                        0x000000010e09d4a5 chromedriver + 238757
+4   chromedriver                        0x000000010e148cae chromedriver + 941230
+5   chromedriver                        0x000000010e1673dc chromedriver + 1065948
+6   chromedriver                        0x000000010e1404c3 chromedriver + 906435
+7   chromedriver                        0x000000010e10c885 chromedriver + 694405
+8   chromedriver                        0x000000010e10d4f1 chromedriver + 697585
+9   chromedriver                        0x000000010e603950 chromedriver + 5900624
+10  chromedriver                        0x000000010e6079e1 chromedriver + 5917153
+11  chromedriver                        0x000000010e5dde14 chromedriver + 5746196
+12  chromedriver                        0x000000010e60840b chromedriver + 5919755
+13  chromedriver                        0x000000010e5cc574 chromedriver + 5674356
+14  chromedriver                        0x000000010e62be88 chromedriver + 6065800
+15  chromedriver                        0x000000010e62c050 chromedriver + 6066256
+16  chromedriver                        0x000000010e63e3f1 chromedriver + 6140913
+17  libsystem_pthread.dylib             0x00007ff806bcc253 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff806bc7bef thread_start + 15
+
+Job started at: Thu Apr  3 23:14:51 MDT 2025
+Job completed at: Thu Apr  3 23:15:00 MDT 2025
+Job started at: Fri Apr  4 14:46:00 MDT 2025
+Job completed at: Fri Apr  4 16:16:24 MDT 2025
+Job started at: Sat Apr  5 14:53:21 MDT 2025
+Job completed at: Sat Apr  5 16:16:34 MDT 2025
+Job started at: Sun Apr  6 16:15:44 MDT 2025
+Job completed at: Sun Apr  6 17:22:14 MDT 2025
+Job started at: Mon Apr  7 14:37:02 MDT 2025
+Job completed at: Mon Apr  7 14:39:08 MDT 2025
+Job started at: Tue Apr  8 14:17:00 MDT 2025
+Job completed at: Tue Apr  8 14:17:33 MDT 2025
+Job started at: Wed Apr  9 15:05:13 MDT 2025
+Job completed at: Wed Apr  9 15:06:58 MDT 2025
+Job started at: Thu Apr 10 15:49:46 MDT 2025
+Job completed at: Thu Apr 10 15:52:53 MDT 2025
+Job started at: Fri Apr 11 16:15:36 MDT 2025
+Job completed at: Fri Apr 11 16:16:00 MDT 2025
+Job started at: Sat Apr 12 14:54:17 MDT 2025
+Job completed at: Sat Apr 12 15:46:55 MDT 2025
+No network connection at: Sun Apr 13 14:51:34 MDT 2025. Job skipped.
+Job started at: Sun Apr 13 22:37:22 MDT 2025
+Job completed at: Sun Apr 13 22:37:37 MDT 2025
+Job started at: Mon Apr 14 15:30:59 MDT 2025
+Job completed at: Mon Apr 14 18:06:42 MDT 2025
+Job started at: Tue Apr 15 14:20:17 MDT 2025
+Job completed at: Tue Apr 15 19:07:40 MDT 2025
+Job started at: Wed Apr 16 14:21:07 MDT 2025
+Job completed at: Wed Apr 16 15:38:24 MDT 2025
+No network connection at: Thu Apr 17 14:49:37 MDT 2025. Job skipped.
+Job started at: Thu Apr 17 23:08:17 MDT 2025
+Job completed at: Thu Apr 17 23:09:52 MDT 2025
+Job started at: Fri Apr 18 14:17:09 MDT 2025
+Job completed at: Fri Apr 18 16:16:29 MDT 2025
+Job started at: Sat Apr 19 14:22:04 MDT 2025
+Job completed at: Sat Apr 19 15:03:32 MDT 2025
+Job started at: Sun Apr 20 16:16:01 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 358, in connect
+    conn = self._new_conn()
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x112313700>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x112313700>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x112313700>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 96, in <module>
+    sh = gc.open("APP Ownership")
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 132, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 105, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 534, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 298, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 258, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 191, in _token_endpoint_request_no_throw
+    response = request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 193, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x112313700>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Job started at: Sun Apr 20 22:34:29 MDT 2025
+Job completed at: Sun Apr 20 22:34:39 MDT 2025
+Job started at: Mon Apr 21 16:15:32 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=60023): Read timed out. (read timeout=120)
+Job started at: Mon Apr 21 23:11:01 MDT 2025
+Job completed at: Mon Apr 21 23:12:35 MDT 2025
+Job started at: Tue Apr 22 14:27:39 MDT 2025
+Job completed at: Tue Apr 22 16:16:36 MDT 2025
+Job started at: Wed Apr 23 15:06:45 MDT 2025
+Job completed at: Wed Apr 23 15:49:17 MDT 2025
+Job started at: Thu Apr 24 15:45:51 MDT 2025
+Job completed at: Thu Apr 24 16:39:31 MDT 2025
+Job started at: Sun May  4 20:39:53 MDT 2025
+Job completed at: Sun May  4 20:41:29 MDT 2025
+Job started at: Mon May  5 14:17:16 MDT 2025
+Job completed at: Mon May  5 15:12:25 MDT 2025
+Job started at: Tue May  6 14:33:27 MDT 2025
+Job completed at: Tue May  6 16:42:35 MDT 2025
+Job started at: Wed May  7 14:25:46 MDT 2025
+Job completed at: Wed May  7 14:26:01 MDT 2025
+Job started at: Thu May  8 14:26:53 MDT 2025
+Job completed at: Thu May  8 16:13:59 MDT 2025
+Job started at: Fri May  9 14:30:34 MDT 2025
+There was an error managing chromedriver (error decoding response body); using driver found in the cache
+Job completed at: Fri May  9 20:17:54 MDT 2025
+Job started at: Sat May 10 16:10:56 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 35, in <module>
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 481, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 380, in execute
+    self.error_handler.check_response(response)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+0   chromedriver                        0x00000001006fa8b8 chromedriver + 5986488
+1   chromedriver                        0x00000001006f19ea chromedriver + 5949930
+2   chromedriver                        0x00000001001aa600 chromedriver + 415232
+3   chromedriver                        0x000000010017f580 chromedriver + 238976
+4   chromedriver                        0x000000010022a898 chromedriver + 940184
+5   chromedriver                        0x0000000100248f2c chromedriver + 1064748
+6   chromedriver                        0x00000001002220e3 chromedriver + 905443
+7   chromedriver                        0x00000001001ee61d chromedriver + 693789
+8   chromedriver                        0x00000001001ef281 chromedriver + 696961
+9   chromedriver                        0x00000001006b8580 chromedriver + 5715328
+10  chromedriver                        0x00000001006bc445 chromedriver + 5731397
+11  chromedriver                        0x0000000100692ed0 chromedriver + 5562064
+12  chromedriver                        0x00000001006bce7b chromedriver + 5734011
+13  chromedriver                        0x0000000100681de4 chromedriver + 5492196
+14  chromedriver                        0x00000001006dfa98 chromedriver + 5876376
+15  chromedriver                        0x00000001006dfc60 chromedriver + 5876832
+16  chromedriver                        0x00000001006f15b1 chromedriver + 5948849
+17  libsystem_pthread.dylib             0x00007ff8130ecdf1 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff8130e8857 thread_start + 15
+
+Job started at: Sat May 10 23:06:27 MDT 2025
+Job completed at: Sat May 10 23:07:56 MDT 2025
+Job started at: Sun May 11 14:25:15 MDT 2025
+Job completed at: Sun May 11 15:17:03 MDT 2025
+Job started at: Mon May 12 14:26:54 MDT 2025
+Job completed at: Mon May 12 17:55:12 MDT 2025
+Job started at: Tue May 13 14:35:06 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 353, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Read timed out. (read timeout=120)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Read timed out. (read timeout=120)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 96, in <module>
+    sh = gc.open("APP Ownership")
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 132, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/client.py", line 105, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 534, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 298, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 258, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/oauth2/_client.py", line 191, in _token_endpoint_request_no_throw
+    response = request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/google/auth/transport/requests.py", line 193, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Read timed out. (read timeout=120)
+Job started at: Tue May 13 22:27:12 MDT 2025
+Job completed at: Tue May 13 22:27:21 MDT 2025
+Job started at: Wed May 14 15:14:13 MDT 2025
+Job completed at: Wed May 14 17:17:33 MDT 2025
+Job started at: Thu May 15 15:53:18 MDT 2025
+Job completed at: Thu May 15 15:53:28 MDT 2025
+Job started at: Fri May 16 16:15:36 MDT 2025
+Job completed at: Fri May 16 19:27:53 MDT 2025
+Job started at: Sat May 17 15:09:38 MDT 2025
+Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+Job completed at: Sat May 17 15:10:17 MDT 2025
+Job started at: Sun May 18 16:15:44 MDT 2025
+Job completed at: Sun May 18 17:45:47 MDT 2025
+Job started at: Mon May 19 15:15:03 MDT 2025
+Traceback (most recent call last):
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckopel/Github/app_yahoo/scripts/app_ownership_pull_load.py", line 32, in <module>
+    driver.get(app_url)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 389, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 378, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 391, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 415, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 447, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/Users/ckopel/Library/Python/3.9/lib/python/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=55713): Read timed out. (read timeout=120)
+No network connection at: Tue May 20 16:15:48 MDT 2025. Job skipped.
