@@ -1,6 +1,7 @@
 import pandas as pd
 
 import os
+import platform
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -87,7 +88,9 @@ values = [
 ## Config details
 sa_path_windows = r"C:\Users\Owner\AppData\Local\Programs\Python\Python310\Lib\site-packages\gspread\service_account.json"
 sa_path_mac = "/Users/ckopel/Documents/keys/service_account.json"
+sa_path_macair = "/Users/chriskopel/Documents/keys/service_account.json"
 sa_path = sa_path_windows if os.name == "nt" else sa_path_mac if os.name == "posix" else None
+sa_path = sa_path_macair if platform.machine() == 'arm64' else sa_path
 
 gc = gspread.service_account(filename=sa_path)
 
