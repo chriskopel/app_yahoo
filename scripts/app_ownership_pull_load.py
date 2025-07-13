@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", module="urllib3")
+
 import pandas as pd
 
 import os
