@@ -6,7 +6,7 @@ import pandas as pd
 import os
 import platform
 from selenium import webdriver
-# from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 
 from bs4 import BeautifulSoup
@@ -15,7 +15,7 @@ from datetime import datetime
 
 import gspread
 
-import chromedriver_binary
+import chromedriver_binary_auto
 
 ## Scrape
 # Get the ChromeDriver path from your environment variable
@@ -30,9 +30,8 @@ options.add_argument("--no-sandbox")  # Required for some environments
 options.add_argument("--disable-dev-shm-usage")  # Optional: improve stability in headless mode
 
 # Setup WebDriver
-# service = Service(chrome_driver_path)  # Use the path from environment variable
-# driver = webdriver.Chrome(service=service, options=options)
-driver = webdriver.Chrome(options=options)
+service = Service(chrome_driver_path)  # Use the path from environment variable
+driver = webdriver.Chrome(service=service, options=options)
 
 # Open the page
 driver.get(app_url)
